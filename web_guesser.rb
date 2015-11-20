@@ -1,7 +1,8 @@
 require 'sinatra'
+require 'sinatra/reloader'
 
 num = rand(101)
 
 get '/' do
-  "The secret number is #{num}"
+  "THE SECRET NUMBER IS #{num}"
 end
