@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'sinatra/reloader'
 
-SECRET_NUMBER = rand(100)
+SECRET_NUMBER = rand(10)
 
 get '/' do
   guess = params['guess'].to_i

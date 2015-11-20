@@ -3,16 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Web Guesser</title>
+
+    <style media="screen">
+      body {
+        background: red;
+      }
+    </style>
   </head>
   <body>
     <form>
       <input type="text" name="guess" />
       <input type="submit" name="Guess!" />
     </form>
-    
+
     <p><%= message %></p>
+
+    <% if message == "You got it right!" %>
     <p>
       THE SECRET NUMBER IS <%= number %>
     </p>
+    <% end %>
   </body>
 </html>
